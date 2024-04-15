@@ -30,14 +30,11 @@ async function downloadFile(url, foldername) {
 async function parseXML(contents) {
   const splitContents = contents.split("\n");
   console.log("there are ", splitContents.length, " lines");
-  // convert this to javascript
-  // text=[i for i in text if "http://trapteam-tablet.activision.com/" in i]
   const filteredContents = splitContents.filter((line) => {
     return line.includes("http://trapteam-tablet.activision.com/");
   });
   console.log("there are ", filteredContents.length, " lines with the url");
   const urls = filteredContents.map((line) => {
-    // get ONLY the link from the line. the lines lok something like       <file name="swedish_level_level_319_pyramid.arc" size="5788167" priority="7480">http://trapteam-tablet.activision.com/Tablet2014/iosa/swedish_level_level_319_pyramid.arc.FC4CE17E0981C29069256FF649393797</file>
     const url = line.split(">")[1].split("<")[0];
     const filename = url.split("/").pop();
     return {
