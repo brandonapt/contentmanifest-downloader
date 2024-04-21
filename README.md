@@ -9,8 +9,8 @@ install node.js via their website (https://nodejs.org)
 download this repo  
 open a command prompt in the same folder as this repo  
 run "npm install"  
-open the "index.js" file  
+open the "download_urdat.js" file  
 change around and add your urls, folders, and baseurls  
-run "node index" in that command prompt  
+run "node download_urdat" in that command prompt  
 
 *todo: make the readme better :3*
