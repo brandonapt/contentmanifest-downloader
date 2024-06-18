@@ -12,5 +12,3 @@ run "npm install"
 open the "download_urdat.js" file  
 change around and add your urls, folders, and baseurls  
 run "node download_urdat" in that command prompt  
-
-*todo: make the readme better :3*
